@@ -17,7 +17,6 @@
 
 html, body{
     min-width: 100vh;
-    background-color: darkgray;
     font-family: var(--fonte-padrao);
 }
 
@@ -59,7 +58,6 @@ section{
 
 section > p{
     padding-bottom: 2em;
-
 }
 
 section.normal{
@@ -73,7 +71,6 @@ section.imagem{
     background-size: cover;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616);
     background-attachment: fixed;
-    
 }
 
 section.imagem > p{
