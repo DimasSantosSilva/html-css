@@ -6,11 +6,21 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
 
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th{
@@ -19,22 +29,38 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: #808080;
             color: aliceblue;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #808080;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: aliceblue;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
         td.numero{
             text-align: right;
+            font-weight: bold;
         }
     </style>
-    <title>tabelas</title>
+    <title>tabelas zebradas arrumadinhas</title>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- 
     'anatomia para tabelas grandes'
-    CAPTION
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -44,14 +70,55 @@
     -->
 
     <table>
+        <caption>População de algumas das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">população</th>
             </tr>
         </thead>
 
         <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
             <tr>
                 <td>São Paulo</td>
                 <td class="numero">45.919.049</td>
@@ -96,11 +163,17 @@
 
         <tfoot>
             <tr>
-                <th>total de hab</th>
+                <th scope="row">total de hab</th>
                 <td class="numero"><strong>156.493.845</strong></td>
             </tr>
         </tfoot>
-
     </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur numquam aspernatur optio quam voluptas, illum est distinctio error reiciendis! Reiciendis esse officiis cupiditate! Praesentium in, doloremque dolore facere doloribus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis culpa delectus quaerat debitis porro quis dolor sequi nobis, accusantium dignissimos quisquam quasi tenetur omnis illum repudiandae soluta nihil dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi voluptatibus est amet tempora ducimus iusto doloribus dolores, voluptates voluptatem aspernatur molestias eligendi inventore. Culpa recusandae soluta cupiditate iusto laborum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi earum sapiente voluptates cupiditate libero. Id sit corrupti provident corporis dolore nihil deserunt vel culpa, non blanditiis ea, eum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum tenetur voluptatem ad. Nemo provident quo ipsa nihil! Vitae possimus est quia eligendi quibusdam veniam magnam dolore qui eveniet ad.</p> <br>
+    <p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur numquam aspernatur optio quam voluptas, illum est distinctio error reiciendis! Reiciendis esse officiis cupiditate! Praesentium in, doloremque dolore facere doloribus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis culpa delectus quaerat debitis porro quis dolor sequi nobis, accusantium dignissimos quisquam quasi tenetur omnis illum repudiandae soluta nihil dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi voluptatibus est amet tempora ducimus iusto doloribus dolores, voluptates voluptatem aspernatur molestias eligendi inventore. Culpa recusandae soluta cupiditate iusto laborum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi earum sapiente voluptates cupiditate libero. Id sit corrupti provident corporis dolore nihil deserunt vel culpa, non blanditiis ea, eum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum tenetur voluptatem ad. Nemo provident quo ipsa nihil! Vitae possimus est quia eligendi quibusdam veniam magnam dolore qui eveniet ad.</p></p> <br>
+    <p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur numquam aspernatur optio quam voluptas, illum est distinctio error reiciendis! Reiciendis esse officiis cupiditate! Praesentium in, doloremque dolore facere doloribus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis culpa delectus quaerat debitis porro quis dolor sequi nobis, accusantium dignissimos quisquam quasi tenetur omnis illum repudiandae soluta nihil dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi voluptatibus est amet tempora ducimus iusto doloribus dolores, voluptates voluptatem aspernatur molestias eligendi inventore. Culpa recusandae soluta cupiditate iusto laborum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi earum sapiente voluptates cupiditate libero. Id sit corrupti provident corporis dolore nihil deserunt vel culpa, non blanditiis ea, eum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum tenetur voluptatem ad. Nemo provident quo ipsa nihil! Vitae possimus est quia eligendi quibusdam veniam magnam dolore qui eveniet ad.</p></p> <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur numquam aspernatur optio quam voluptas, illum est distinctio error reiciendis! Reiciendis esse officiis cupiditate! Praesentium in, doloremque dolore facere doloribus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis culpa delectus quaerat debitis porro quis dolor sequi nobis, accusantium dignissimos quisquam quasi tenetur omnis illum repudiandae soluta nihil dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi voluptatibus est amet tempora ducimus iusto doloribus dolores, voluptates voluptatem aspernatur molestias eligendi inventore. Culpa recusandae soluta cupiditate iusto laborum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi earum sapiente voluptates cupiditate libero. Id sit corrupti provident corporis dolore nihil deserunt vel culpa, non blanditiis ea, eum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum tenetur voluptatem ad. Nemo provident quo ipsa nihil! Vitae possimus est quia eligendi quibusdam veniam magnam dolore qui eveniet ad.</p> <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur numquam aspernatur optio quam voluptas, illum est distinctio error reiciendis! Reiciendis esse officiis cupiditate! Praesentium in, doloremque dolore facere doloribus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis culpa delectus quaerat debitis porro quis dolor sequi nobis, accusantium dignissimos quisquam quasi tenetur omnis illum repudiandae soluta nihil dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi voluptatibus est amet tempora ducimus iusto doloribus dolores, voluptates voluptatem aspernatur molestias eligendi inventore. Culpa recusandae soluta cupiditate iusto laborum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi earum sapiente voluptates cupiditate libero. Id sit corrupti provident corporis dolore nihil deserunt vel culpa, non blanditiis ea, eum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum tenetur voluptatem ad. Nemo provident quo ipsa nihil! Vitae possimus est quia eligendi quibusdam veniam magnam dolore qui eveniet ad.</p> <br> 
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur numquam aspernatur optio quam voluptas, illum est distinctio error reiciendis! Reiciendis esse officiis cupiditate! Praesentium in, doloremque dolore facere doloribus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis culpa delectus quaerat debitis porro quis dolor sequi nobis, accusantium dignissimos quisquam quasi tenetur omnis illum repudiandae soluta nihil dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi voluptatibus est amet tempora ducimus iusto doloribus dolores, voluptates voluptatem aspernatur molestias eligendi inventore. Culpa recusandae soluta cupiditate iusto laborum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi earum sapiente voluptates cupiditate libero. Id sit corrupti provident corporis dolore nihil deserunt vel culpa, non blanditiis ea, eum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum tenetur voluptatem ad. Nemo provident quo ipsa nihil! Vitae possimus est quia eligendi quibusdam veniam magnam dolore qui eveniet ad.</p>
 </body>
 </html>
