@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Nova+Square&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --amarelo-principal: #B6B1AB;
+    --amarelo-2: #e9a756;
+
+    --fonte-principal: "Comfortaa", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal)
+}
+
+body{
+    background-color: var(--amarelo-principal);
+}
+
+header{
+    background-color: black;
+    color: aliceblue;
+    padding-top: 30px;
+    min-height: 150px;
+}
+
+header > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 24px;
+}
+
+header > p{
+    text-align: center;
+    font-size: 1em;
+    text-decoration: underline;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+nav{
+    padding: 12px;
+    background-color: black;
+}
+
+nav > a{
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+nav > a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--amarelo-2);
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+div#h1{
+    width: 800px;
+    height: 50px;
+    background-color: var(--amarelo-2);
+    align-content: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+div#h1 > h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+
